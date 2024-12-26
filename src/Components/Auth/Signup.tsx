@@ -25,7 +25,7 @@ const Signup: React.FC<SignupProps> = ({ onClose }) => {
     if (isError) {
       toast.error(t(isError));
     }
-  }, [isLogin, isError]);
+  }, [isLogin, isError, onClose, t] );
 
   const handleSignup = (body: UserValues): void => {
     dispatch(signup(body));

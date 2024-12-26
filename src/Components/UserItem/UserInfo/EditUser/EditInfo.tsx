@@ -3,10 +3,11 @@ import { useTranslation } from "react-i18next";
 import { useAppDispatch, useAppSelector } from "hooks/useTypedRedux";
 import { selectaUser } from "Store/User/user-selectors";
 import UpdateUserModal from "./UpdateUserModal";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { UserUpdate } from "./Form/Form";
 import { updateUsersById } from "Store/User/user-operations";
 import { toast } from "react-toastify";
+
 interface UpdateProps {
   id: number;
 }
@@ -18,30 +19,27 @@ const EditInfo: React.FC<UpdateProps> = ({ id }) => {
 
   const dispatch = useAppDispatch();
 
+  const onClose = useCallback(() => setActiveModal(false), []); // Memoized to prevent unnecessary re-renders
+
   useEffect(() => {
-    if (requestStatus == "fetchFulfilled" && activeModal) {
+    if (requestStatus === "fetchFulfilled" && activeModal) {
       toast.success(t("UserListPage.success"));
       onClose();
     }
     if (error) {
       toast.error(t(error));
     }
-  }, [requestStatus, error, t]);
+  }, [requestStatus, error, t, activeModal, onClose]);
 
   const handleClick = (data: UserUpdate): void => {
-    dispatch(updateUsersById({ id: id, body: data }));
+    dispatch(updateUsersById({ id, body: data }));
   };
 
   const openModal = (): void => setActiveModal(true);
-  const onClose = (): void => setActiveModal(false);
 
   return (
     <>
-      <Button
-        onClick={openModal}
-        variant="contained"
-        color="primary"
-      >
+      <Button onClick={openModal} variant="contained" color="primary">
         {t("UserListPage.UpdateInfo")}
       </Button>
       <UpdateUserModal

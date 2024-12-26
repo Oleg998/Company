@@ -16,14 +16,14 @@ const LoginPage: React.FC<LoginPageProps> = ({ onClose }) => {
   const { t } = useTranslation();
 
   useEffect(() => {
-    if (isLogin ) {
+    if (isLogin) {
       toast.success(t("Auth.success_login"));
       onClose();
     }
     if (isError) {
       toast.error(t(isError));
     }
-  }, [isLogin, isError,]);
+  }, [isLogin, isError, onClose, t]);
 
   const handleLogin = (body: UserValues): void => {
     dispatch(login(body));

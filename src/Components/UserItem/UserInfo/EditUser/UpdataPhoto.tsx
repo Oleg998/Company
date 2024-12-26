@@ -1,5 +1,5 @@
 import { Button } from "@mui/material";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { useTranslation } from "react-i18next";
 import { useAppDispatch, useAppSelector } from "hooks/useTypedRedux";
 import { selectaUser } from "Store/User/user-selectors";
@@ -12,45 +12,56 @@ interface UpdateProps {
   id: number;
 }
 
-const UpdataPhoto: React.FC<UpdateProps> = ({ id }) => {
+const UpdatePhoto: React.FC<UpdateProps> = ({ id }) => {
   const [activeModal, setActiveModal] = useState<boolean>(false);
   const { t } = useTranslation();
   const { isLoading, requestStatus, error } = useAppSelector(selectaUser);
   const dispatch = useAppDispatch();
 
+  const onClose = useCallback(() => setActiveModal(false), []);
+
   useEffect(() => {
     if (requestStatus === "fetchFulfilled" && activeModal) {
       toast.success(t("UserListPage.success"));
       setActiveModal(false);
-      window.location.reload();
+      // Instead of reloading, trigger a refetch or update the state here
+      // Example: dispatch(fetchUserById(id));
     }
     if (error) {
-      toast.error(t(error));
+      toast.error(t(error || "An error occurred")); // Safeguard for undefined errors
     }
-  }, [requestStatus]);
+  }, [requestStatus, error, t, activeModal, onClose]);
+
+  const handleFileUpload = async (fileUrl: string): Promise<FormData | null> => {
+    try {
+      const response = await fetch(fileUrl);
+      const avatarBlob = await response.blob();
+      const formData = new FormData();
+      formData.append("file", avatarBlob, "file.jpg");
+      return formData;
+    } catch (e) {
+      toast.error(t("UserListPage.ErrorFetchingPhoto"));
+      return null;
+    }
+  };
 
   const handleClick = async (data: UserUpdate): Promise<void> => {
     if (!data.user_avatar) {
       toast.error(t("UserListPage.ErrorNoPhoto"));
       return;
     }
-    const response = await fetch(data.user_avatar);
-    const avatarBlob = await response.blob();
-    const formData = new FormData();
-    formData.append("file", avatarBlob, "file.jpg");
-    dispatch(updatePhoto({ id: id, body: formData }));
+
+    const formData = await handleFileUpload(data.user_avatar);
+    if (formData) {
+      dispatch(updatePhoto({ id, body: formData }));
+    }
   };
 
   const openModal = (): void => setActiveModal(true);
-  const onClose = (): void => setActiveModal(false);
 
   return (
     <>
-      <Button
-        onClick={openModal}
-        variant="contained"
-        color="primary"
-      >
+      <Button onClick={openModal} variant="contained" color="primary">
         {t("UserListPage.UpdatePhoto")}
       </Button>
       <UpdateUserModal
@@ -65,4 +76,4 @@ const UpdataPhoto: React.FC<UpdateProps> = ({ id }) => {
   );
 };
 
-export default UpdataPhoto;
+export default UpdatePhoto;

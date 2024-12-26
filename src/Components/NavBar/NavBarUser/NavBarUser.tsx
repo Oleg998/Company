@@ -30,7 +30,7 @@ const NavBarUser = () => {
     if (isLogin) {
       dispatch(fetchMe());
     }
-  }, [isLogin]);
+  }, [isLogin, dispatch]);
   console.log(user);
   
   const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>) => {
