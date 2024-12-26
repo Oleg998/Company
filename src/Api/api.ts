@@ -1,7 +1,7 @@
 import axios from "axios";
 import { getErrorMessages } from "../Utils/errorMessages";
 
-const DB_HOST = process.env.REACT_APP_DB_HOST;
+const DB_HOST = "http://51.20.210.187";
 
 export const apiInstance = axios.create({
   baseURL: DB_HOST,
