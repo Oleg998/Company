@@ -1,0 +1,183 @@
+[
+    {
+        "company_id": 1,
+        "company_name": "TestCompany_A",
+        "company_title": "JSC",
+        "company_avatar": "http://51.20.210.187/uploads/company-1.jpg",
+        "is_visible": true,
+        "company_description": "some description",
+        "company_city": "Kyiv",
+        "company_phone": "0997775533",
+        "company_links": null,
+        "company_owner": {
+            "user_id": 3,
+            "user_email": "unfeir@gmail.com",
+            "user_firstname": "Tom",
+            "user_lastname": "Ford",
+            "user_avatar": "http://51.20.210.187/uploads/user-3.png"}
+    },
+    {
+        "company_id": 2,
+        "company_name": "company Lorem",
+        "company_title": null,
+        "company_avatar": "http://51.20.210.187/uploads/company-2.jpg",
+        "is_visible": true,
+        "company_description": null,
+        "company_city": null,
+        "company_phone": "0000000",
+        "company_links": null,
+        "company_owner": {
+            "user_id": 3,
+            "user_email": "unfeir@gmail.com",
+            "user_firstname": "Tom",
+            "user_lastname": "Ford",
+            "user_avatar": "http://51.20.210.187/uploads/user-3.png"
+        }
+    },
+    {
+        "company_id": 3,
+        "company_name": "115 Company",
+        "company_title": null,
+        "company_avatar": null,
+        "is_visible": true,
+        "company_description": null,
+        "company_city": "Kyyy",
+        "company_phone": null,
+        "company_links": null,
+        "company_owner": {
+            "user_id": 2,
+            "user_email": "user115@example.com",
+            "user_firstname": "John",
+            "user_lastname": "Dou",
+            "user_avatar": null
+        }
+    },
+    {
+        "company_id": 4,
+        "company_name": "115_2 Company",
+        "company_title": null,
+        "company_avatar": null,
+        "is_visible": true,
+        "company_description": null,
+        "company_city": null,
+        "company_phone": null,
+        "company_links": null,
+        "company_owner": {
+            "user_id": 2,
+            "user_email": "user115@example.com",
+            "user_firstname": "John",
+            "user_lastname": "Dou",
+            "user_avatar": null
+        }
+    },
+    {
+        "company_id": 5,
+        "company_name": "115_3_accept Company",
+        "company_title": null,
+        "company_avatar": null,
+        "is_visible": true,
+        "company_description": null,
+        "company_city": null,
+        "company_phone": null,
+        "company_links": null,
+        "company_owner": {
+            "user_id": 2,
+            "user_email": "user115@example.com",
+            "user_firstname": "John",
+            "user_lastname": "Dou",
+            "user_avatar": null
+        }
+    },
+    {
+        "company_id": 6,
+        "company_name": "115_4 Company",
+        "company_title": null,
+        "company_avatar": null,
+        "is_visible": true,
+        "company_description": null,
+        "company_city": null,
+        "company_phone": null,
+        "company_links": null,
+        "company_owner": {
+            "user_id": 2,
+            "user_email": "user115@example.com",
+            "user_firstname": "John",
+            "user_lastname": "Dou",
+            "user_avatar": null
+        }
+    },
+    {
+        "company_id": 7,
+        "company_name": "test_sort",
+        "company_title": null,
+        "company_avatar": null,
+        "is_visible": true,
+        "company_description": null,
+        "company_city": null,
+        "company_phone": null,
+        "company_links": null,
+        "company_owner": {
+            "user_id": 3,
+            "user_email": "unfeir@gmail.com",
+            "user_firstname": "Tom",
+            "user_lastname": "Ford",
+            "user_avatar": "http://51.20.210.187/uploads/user-3.png"
+        }
+    },
+    {
+        "company_id": 8,
+        "company_name": "Best Company",
+        "company_title": null,
+        "company_avatar": null,
+        "is_visible": true,
+        "company_description": null,
+        "company_city": null,
+        "company_phone": null,
+        "company_links": null,
+        "company_owner": {
+            "user_id": 3,
+            "user_email": "unfeir@gmail.com",
+            "user_firstname": "Tom",
+            "user_lastname": "Ford",
+            "user_avatar": "http://51.20.210.187/uploads/user-3.png"
+        }
+    },
+    {
+        "company_id": 9,
+        "company_name": "test company",
+        "company_title": null,
+        "company_avatar": "http://51.20.210.187/uploads/company-9.jpg",
+        "is_visible": true,
+        "company_description": null,
+        "company_city": null,
+        "company_phone": "123456789",
+        "company_links": [
+            "test"
+        ],
+        "company_owner": {
+            "user_id": 20,
+            "user_email": "Test1@gmail.com",
+            "user_firstname": "Test1",
+            "user_lastname": "Test",
+            "user_avatar": "http://51.20.210.187/uploads/user-20.jpg"
+        }
+    },
+    {
+        "company_id": 11,
+        "company_name": "Marlboro",
+        "company_title": "Marlboro-title",
+        "company_avatar": "http://51.20.210.187/uploads/company-11.png",
+        "is_visible": true,
+        "company_description": "Marlboro-descrription",
+        "company_city": "Kiev",
+        "company_phone": "5252525252",
+        "company_links": null,
+        "company_owner": {
+            "user_id": 8,
+            "user_email": "bogdan@kostenko.ua",
+            "user_firstname": "bogdan",
+            "user_lastname": "kostenko",
+            "user_avatar": null
+        }
+    }
+]

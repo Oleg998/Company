@@ -1,0 +1,33 @@
+.mainMenuList {
+  height: 100vh;
+  display: flex;
+  gap: 20px;
+  font-size: 24px;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.mainMenuLink {
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.mainMenuLink:global(.active) {
+  color: blue;
+}
+
+@media (min-width: 752px) {
+  .mainMenuList {
+    flex-direction: row;
+    height: 100%;
+    gap: 36px;
+  }
+  .mainMenuLink {
+    color: white;
+  }
+  .mainMenuLink:global(.active) {
+    color: red;
+  }
+}

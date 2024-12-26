@@ -1,0 +1,72 @@
+[
+            {
+                "company_id": 1,
+                "company_name": "TestCompany_A",
+                "company_title": "JSC",
+                "company_avatar": "http://51.20.210.187/uploads/company-1.jpg",
+                "is_visible": true
+            },
+            {
+                "company_id": 2,
+                "company_name": "company Lorem",
+                "company_title": null,
+                "company_avatar": "http://51.20.210.187/uploads/company-2.jpg",
+                "is_visible": true
+            },
+            {
+                "company_id": 3,
+                "company_name": "115 Company",
+                "company_title": null,
+                "company_avatar": null,
+                "is_visible": true
+            },
+            {
+                "company_id": 4,
+                "company_name": "115_2 Company",
+                "company_title": null,
+                "company_avatar": null,
+                "is_visible": true
+            },
+            {
+                "company_id": 5,
+                "company_name": "115_3_accept Company",
+                "company_title": null,
+                "company_avatar": null,
+                "is_visible": true
+            },
+            {
+                "company_id": 6,
+                "company_name": "115_4 Company",
+                "company_title": null,
+                "company_avatar": null,
+                "is_visible": true
+            },
+            {
+                "company_id": 7,
+                "company_name": "test_sort",
+                "company_title": null,
+                "company_avatar": null,
+                "is_visible": true
+            },
+            {
+                "company_id": 8,
+                "company_name": "Best Company",
+                "company_title": null,
+                "company_avatar": null,
+                "is_visible": true
+            },
+            {
+                "company_id": 9,
+                "company_name": "test company",
+                "company_title": null,
+                "company_avatar": "http://51.20.210.187/uploads/company-9.jpg",
+                "is_visible": true
+            },
+            {
+                "company_id": 11,
+                "company_name": "Marlboro",
+                "company_title": "Marlboro-title",
+                "company_avatar": "http://51.20.210.187/uploads/company-11.png",
+                "is_visible": true
+            }
+        ]

@@ -1,0 +1,27 @@
+.dropdown {
+  position: relative;
+}
+.option {
+   padding: 16px;
+}
+.dropdown ,
+.option,
+.options.show {
+    display: flex;
+    cursor: pointer;
+}
+.options {
+  background-color: #1976d2;
+  position: absolute;
+  top: 26px;
+  display: none; 
+  flex-direction: column;
+}
+.option:hover {
+  background-color: lightblue;
+}
+.flag {
+  width: 20px;
+  height: 16px;
+  margin-right: 6px;
+}

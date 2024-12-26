@@ -1,0 +1,54 @@
+.iconButton {
+  margin-right: 2px;
+  display: block;
+}
+.drawer {
+  text-align: center;
+  min-width: 188px;
+}
+.navigation {
+  padding: 8px 0;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.appBar {
+  position: static !important;
+}
+.logo {
+  display: flex;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  color: inherit;
+  text-decoration: none;
+  margin-right: 2rem;
+}
+
+.navBox {
+  display: none;
+}
+
+.navButton {
+  color: #fff;
+}
+
+.navButton:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.activeLink {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.drawerPaper {
+  width: 240px;
+}
+@media (min-width: 752px) {
+  .iconButton {
+    display: none;
+  }
+  .navBox {
+    display: block;
+  }
+}

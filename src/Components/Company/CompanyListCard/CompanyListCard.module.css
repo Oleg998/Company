@@ -1,0 +1,23 @@
+.company_avatar,
+.item {
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.item {
+  display: flex;
+  padding: 14px;
+}
+.company_avatar {
+  width: 120px;
+  height: 120px;
+}
+.item_container_info,
+.link_text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.link_text {
+  flex-direction: row;
+  align-items: flex-start;
+}

@@ -1,0 +1,26 @@
+.item_container_info {
+  gap: 16px;
+}
+.user_avatar,
+.item {
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 14px;
+}
+.user_avatar {
+  width: 120px;
+  height: 120px;
+}
+.link_text,
+.item_container_info {
+  display: flex;
+  text-align: left;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.item_container_info {
+  flex-direction: column;
+}
+.link_text {
+  flex-direction: row;
+}

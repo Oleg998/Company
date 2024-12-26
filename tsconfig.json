@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+      "target": "ES6",                                // Целевая версия ECMAScript
+      "module": "ESNext",                             // Модульная система
+      "lib": ["DOM", "ESNext"],                       // Библиотеки, поддерживаемые проектом
+      "jsx": "react-jsx",                                 // Тип JSX для React
+      "moduleResolution": "node",                     // Метод разрешения модулей
+      "esModuleInterop": true,                        // Совместимость с CommonJS модулями
+      "skipLibCheck": true,                           // Пропуск проверки библиотек
+      "forceConsistentCasingInFileNames": true,       // Обязательная проверка регистра имен файлов
+      "strict": true,                                 // Включение строгого режима
+      "noImplicitAny": true,                          // Запрет на неявный тип "any"
+      "baseUrl": "./src",                             // Базовый путь для импорта
+      "paths": {
+        "@components/*": ["components/*"],            // Пример пути для компонентов
+        "@pages/*": ["pages/*"]                       // Пример пути для страниц
+      },
+      "allowSyntheticDefaultImports": true,           // Разрешить синтетический импорт по умолчанию
+      "resolveJsonModule": true                       // Разрешение для импорта JSON файлов
+    },
+    "include": ["src", "global.d.ts"],                               // Включаемая директория для проверки
+    "exclude": ["node_modules", "build"]              // Исключаемые директории
+
+  }
+  

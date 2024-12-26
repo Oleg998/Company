@@ -1,0 +1,30 @@
+.userStatus {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.statusText {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.active {
+  color: green;
+}
+
+.inactive {
+  color: gray;
+}
+
+.banned {
+  color: red;
+}
+
+.pending {
+  color: orange;
+}
+
+.unknown {
+  color: blue;
+}

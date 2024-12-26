@@ -1,0 +1,176 @@
+{
+  "MainMenu": {
+    "Home": "Home",
+    "About": "About",
+    "Company": "Company"
+  },
+  "UserMenu": {
+    "UserList": "User List",
+    "Tooltip": "Open settings",
+    "Avatar": "Name",
+    "Me":"My account",
+    "Portfolio":"Portfolio"
+  },
+  "Btn": {
+    "homepage": "Test Api"
+  },
+  "Modal": {
+    "name": "Name modal window"
+  },
+  "Loading": {
+    "loading": "Loading"
+  },
+  "Language": {
+    "en": "English",
+    "ua": "Ukrainian"
+  },
+  "AboutPage": {
+    "aboutUs": "About Us",
+    "description": "We are a team of professionals committed to providing the best solutions for our clients. Our goal is to make your experience with us memorable and productive.",
+    "ourMission": "Our Mission",
+    "missionDescription": "We believe in the power of technology and its ability to change lives for the better. Our mission is to leverage advanced technology to create innovative products and services.",
+    "ourTeam": "Our Team",
+    "teamMember": {
+      "name": "Name Surname",
+      "position": "Position"
+    },
+    "contactUs": "Contact Us",
+    "contactDescription": "If you have any questions, feel free to reach out to us via <1>{{email}}</1> or follow us on social media."
+  },
+  "PageName": {
+    "CompanyInfo": "Company Info ",
+    "Home": "Home Page ",
+    "About": "About Page ",
+    "Company": "Company Page",
+    "UserList": "User List Page",
+    "Profile": "Profile Page"
+  },
+  "HomePage": {
+    "titel": "Welcome to the project! We are glad to see you. "
+  },
+  "NoFindPage": {
+    "titel": "Can't find this page. ",
+    "subtitel": "Go Home Page."
+  },
+  "UserListPage": {
+    "SelectPhoto":"Select Photo",
+    "ErrorNoPhoto":"Select Photo to Upload",
+    "UpdatePhoto":"UpdatePhoto",
+    "delete":"Delete User",
+    "user_password": "Password",
+    "user_password_ph": "someone@example.com",
+    "user_password_repeat": "Confirm New Password",
+    "user_password_repeat_ph": "Re-enter your password",
+    "Update-password": "Update password",
+    "success": "Success",
+    "UpdateInfo": "Update Info",
+    "add_link": "Add Link",
+    "Links": "Links",
+    "Link1": "Links№1",
+    "Link2": "Links№2",
+    "Link3": "Links№3",
+    "Link4": "Links№4",
+    "Link5": "Links№5",
+    "Email": "Email",
+    "Status": "Status",
+    "Superuser": "Superuser",
+    "Yes": "Yes",
+    "No": "No",
+    "error": "User not found",
+    "user_firstname": "First Name",
+    "user_lastname": "Last  Name",
+    "user_firstname_ph": "First Name",
+    "user_lastname_ph": "Last  Name",
+    "user_city": "City",
+    "user_phone": "Phone",
+    "user_city_ph": "City",
+    "user_phone_ph": "Phone",
+    "user_status": "Status",
+    "user_links": "Links",
+    "user_links_ph": "Links",
+    "remove_link":"Delete"
+  },
+  "CompanyPage": {
+    "owner": "Owner",
+    "error": "Company not found",
+    "noCity": "No City",
+    "nodescription": "No description",
+    "noPhone": "No Phone",
+    "noLink": "No Link",
+    "name": "Name Company",
+    "notitel": "No Titel",
+    "titel": "Titel",
+    "description": "Description",
+    "city": "City",
+    "phone": "Phone",
+    "link": "Link",
+    "email": "Link",
+    "noEmail": "Not Email "
+  },
+  "Errors": {
+    "noData": "noData",
+    "successStatus": "Server is available",
+    "errorMessage": "An error occurred",
+    "unexpectedError": "An unexpected error occurred. Please try again later.",
+    "serverError": "Server error. Please contact support.",
+    "notFound": "Resource not found.",
+    "unauthorized": "Unauthorized access. Please log in.",
+    "forbidden": "Access forbidden. You do not have permission to view this resource.",
+    "badRequest": "Bad request. Please check your input.",
+    "error": "Error:"
+  },
+  "Status": {
+    "status": "Status Code",
+    "detail": "Detail",
+    "result": "Result"
+  },
+  "Valid": {
+    "phoneInvalid" :"Phone must be only number",
+    "emailInvalid": "Only Latin letters are allowed in the email",
+    "emailRequired": "Email field is required",
+    "passwordMinLength": "Password must be at least 4 characters long",
+    "passwordUpperCase": "Password must contain at least one uppercase letter",
+    "passwordLowerCase": "Password must contain at least one lowercase letter",
+    "passwordNumber": "Password must contain at least one number",
+    "passwordRequired": "Password field is required",
+    "firstNameLength": "First Name field is required",
+    "lastNameRequired": "Last Name field is required",
+    "confirmPasswordRequired": "Field is required",
+    "passwordsMustMatch": "Passwords must match"
+  },
+  "Form": {
+    "logout": "LogOut",
+    "user_firstname": "Name",
+    "user_firstname_ph": "Name",
+    "user_lastname": "Last Name",
+    "user_lastname_ph": "Last Name",
+    "formHeaderLogin": "Login",
+    "formHeader": "Registration",
+    "user_email": "Email",
+    "user_email_ph": "someone@example.com",
+    "user_password": "Password",
+    "user_password_ph": "Enter Password Plese",
+    "submitReg": "Register",
+    "user_password_repeat": "Confirm Password",
+    "user_password_repeat_ph": "Re-enter your password"
+  },
+  "Auth":{
+    "success": "Congratulations on your successful registration!",
+    "success_login": "Congratulations on your successful Login!",
+    "success_logout": "Goodby!! see you leater",
+    "error": "An error has occurred. Check your email"
+  },  
+  "UserStatus": {
+    "Active": "Active",
+    "Inactive": "Inactive",
+    "Banned": "Banned",
+    "Pending": "Pending",
+    "Unknown": "Unknown"
+  },
+  "Confirm": {
+    "title": "Deleting",
+    "message": "Are you sure you want to delete User?",
+    "buttonYes": "Yes",
+    "buttonNo": "No"
+  }
+}

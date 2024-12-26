@@ -1,0 +1,21 @@
+.listItem {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+.pagination{
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+@media (min-width: 768px) and (max-width: 1439px) {
+  .listItem {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1440px) {
+  .listItem {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

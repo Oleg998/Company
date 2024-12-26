@@ -1,0 +1,25 @@
+.uploadButton {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #007bff;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.uploadButton:hover {
+  background-color: #0056b3;
+}
+
+.hiddenInput {
+  display: none;
+}
+
+.previewImage {
+  margin-top: 10px;
+  max-width: 200px;
+}

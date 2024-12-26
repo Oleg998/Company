@@ -1,0 +1,19 @@
+.formContainer,
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.formHeader {
+  margin-bottom: 8px;
+  font-size: 24px;
+  text-align: center;
+}
+.inputWrapper {
+  gap: 12px;
+  flex: 1;
+}
+.error {
+  color: red;
+  font-size: 12px;
+}

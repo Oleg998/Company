@@ -1,0 +1,39 @@
+.container,
+.info{
+    padding-top: 32px;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;    
+}
+.info {
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+    padding: 16px;
+}
+.user_avatar{
+    margin: 0 auto;
+    width: 320px;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.userDetailsInfo{
+  font-size: 26px;
+}
+.userDetailsTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.userDetailsTable th,
+.userDetailsTable td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.userDetailsTable th {
+  width: 150px;
+}
+
