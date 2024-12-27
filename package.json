@@ -1,8 +1,8 @@
 {
-  "name": "meduzzen-internship",
+  "name": "company",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://oleg998.github.io/front-End_Internship_9/",
+  "homepage": "https://oleg998.github.io/Company/",
   "dependencies": {
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",

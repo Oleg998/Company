@@ -12,7 +12,7 @@ const HomePage = () => {
 
   return (
     <div className={css.container}>
-      <h4 className={css.title}>Meduzzen Internship</h4>
+      <h4 className={css.title}>Company International</h4>
       <h6 className={css.subtitle}>{t("HomePage.titel")}</h6>
       <Button
         className={css.button}
