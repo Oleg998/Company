@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkcompany=self.webpackChunkcompany||[]).push([[598],{4598:(e,n,s)=>{s.r(n),s.d(n,{default:()=>d});var t=s(5475);const a="notfound_container__Q-jF5";var c=s(4117),o=s(4094),i=s(579);const d=()=>{const{t:e}=(0,c.Bd)();return(0,i.jsxs)("div",{className:a,children:[(0,i.jsx)("h1",{children:e("NoFindPage.titel")}),(0,i.jsx)(t.N_,{to:o.i.HomePage,children:e("NoFindPage.subtitel")})]})}}}]);
-//# sourceMappingURL=598.a1bf79de.chunk.js.map
