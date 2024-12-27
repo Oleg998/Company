@@ -15,7 +15,7 @@ if (rootElement) {
     <React.StrictMode>
       <Provider store={store}>
         <PersistGate persistor={persistor}>
-          <BrowserRouter basename="/front-End_Internship_9">
+          <BrowserRouter basename="/company">
             <App />
           </BrowserRouter>
         </PersistGate>
